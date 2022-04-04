@@ -65,17 +65,23 @@ body{
 .itens{
     display: flex;
     overflow: scroll;
+    margin-left: -5px;
     margin-bottom: 27px;
+    padding-left: 5px;
 }
 
 .iten{
     width: 172px;
+    height: 216px;
     background-color: #ffffff;
     margin-top: 17px;
+    margin-bottom: 17px;
     margin-right: 16px;
-    padding: 18px 14px;
+    padding: 18px 14px 13px 14px;
     border-radius: 9px;
+    box-shadow: 0  10px -4px rgba(0, 0, 0, 0.25);
 }
+
 
 .itens :last-child{
     margin-right: 5vw;
@@ -104,9 +110,33 @@ body{
 }
 
 .price{
+    display: flex;
+    width: 144px;
+    position: relative;
     font-size: 16px;
     color: #000000;
     margin-top: 5px;
+}
+
+.price :first-child{
+    margin-right: 5px;
+}
+
+.check{
+    position: absolute;
+    color: #32b72f;
+    background-color: #ffffff;
+    border-radius: 30px;
+    left: 129px;
+    opacity: 0;
+}
+
+.selectf, .selectd, .selectdes{
+    box-shadow: 0px 0px 0px 5px #32b72f;
+}
+
+.selectf .check, .selectd .check, .selectdes .check{
+    opacity: 1;
 }
 
 .dessert{
@@ -128,4 +158,8 @@ body{
     border-radius: 50px;
     border: none;
     background-color: #CBCBCB;
+}
+
+.close{
+    background-color: green;
 }
